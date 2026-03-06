@@ -1,0 +1,178 @@
+.ds-button {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0 var(--space-16);
+  min-height: 40px;
+  border-radius: var(--radius-regular);
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color var(--transition-regular),
+    color var(--transition-regular), border-color var(--transition-regular);
+}
+
+.ds-button--primary {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border-color: var(--color-accent);
+}
+
+.ds-button--primary:hover {
+  background-color: #6f0000;
+  border-color: #6f0000;
+}
+
+.ds-button--secondary {
+  background-color: transparent;
+  color: var(--color-accent);
+  border-color: rgba(17, 17, 17, 0.16);
+}
+
+.ds-button--secondary:hover {
+  border-color: var(--color-accent);
+}
+
+.ds-card {
+  border-radius: var(--radius-regular);
+  border: var(--border-subtle);
+  padding: var(--space-24);
+  background-color: #ffffff;
+}
+
+.ds-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.ds-input__label {
+  font-size: 14px;
+}
+
+.ds-input__field {
+  border-radius: var(--radius-regular);
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  padding: 10px var(--space-16);
+  font-size: 14px;
+  transition: border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  background-color: #ffffff;
+}
+
+.ds-input__field:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 1px rgba(139, 0, 0, 0.2);
+}
+
+.ds-input__helper {
+  font-size: 13px;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.step-explanation__label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.step-explanation__title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  margin: 0;
+}
+
+.step-explanation__description {
+  margin: 0;
+}
+
+.copy-prompt {
+  border-radius: var(--radius-regular);
+  border: var(--border-subtle);
+  padding: var(--space-24);
+  background-color: #ffffff;
+}
+
+.copy-prompt__title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.copy-prompt__hint {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(17, 17, 17, 0.8);
+}
+
+.copy-prompt__body {
+  border-radius: var(--radius-regular);
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  padding: var(--space-16);
+  background-color: #faf9f6;
+}
+
+.copy-prompt__list {
+  margin: 0;
+  padding-left: var(--space-24);
+}
+
+.copy-prompt__button {
+  align-self: flex-start;
+}
+
+.ds-state {
+  border-radius: var(--radius-regular);
+  padding: var(--space-16);
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  background-color: #ffffff;
+}
+
+.ds-state__title {
+  margin: 0;
+  font-size: 15px;
+}
+
+.ds-state__description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.ds-state__actions {
+  margin-top: var(--space-16);
+}
+
+.ds-state--error {
+  border-color: rgba(139, 0, 0, 0.4);
+}
+
+.ds-state--empty {
+  border-style: dashed;
+}
+
+.progress-indicator {
+  font-size: 14px;
+}
+
+.status-badge {
+  border-radius: 999px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.status-badge--not-started {
+  background-color: #ffffff;
+}
+
+.status-badge--in-progress {
+  background-color: #faf2f2;
+}
+
+.status-badge--shipped {
+  background-color: #f0f9f3;
+}
+
